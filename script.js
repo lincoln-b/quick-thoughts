@@ -2,7 +2,9 @@ var conn, keep_button;
 
 function send_note() {
     var note = document.getElementById("note");
-    conn.send(note.value);
+    var date = new Date();
+    var msg = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + note.value;
+    conn.send(msg);
     note.value = "";
 }
 
