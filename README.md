@@ -6,10 +6,10 @@ Repository is live at http://lincoln-b.com/thoughts. Feel free to use for your o
 Usage
 =====
 
-git clone ... && cd ...
-php server/bin/chat-server.php
-# fire up a server of some kind for index.html
-# Voila!
+    git clone ... && cd ...
+    php server/bin/chat-server.php
+    # fire up a server of some kind for index.html
+    # Voila!
 
 How it works
 ============
