@@ -18,10 +18,12 @@ function open_submission() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+	// TODO: Better definition of socketUrl
+	var socketUrl = '';
     keep_button = document.getElementById("keep");
     keep_button.addEventListener("click", send_note);
     keep_button.disabled = true;
-    conn = new WebSocket("ws://vps124502.vps.ovh.ca:8080");
+    conn = new WebSocket(socketUrl);
     conn.onmessage = receive_note;
     conn.onopen = open_submission;
 });
